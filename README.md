@@ -10,8 +10,8 @@
 
 <br/><br/>
 
-[![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-Visit%20App-00D9FF?style=for-the-badge&logoColor=white)](https://Getquickjob.netlify.app)
-[![Netlify Status](https://img.shields.io/badge/Netlify-Deployed-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://Getquickjob.netlify.app)
+[![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-Visit%20App-00D9FF?style=for-the-badge&logoColor=white)](https://getquickjob.netlify.app/)
+[![Netlify Status](https://img.shields.io/badge/Netlify-Deployed-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://getquickjob.netlify.app/)
 [![GitHub Stars](https://img.shields.io/github/stars/Gone001/Get-quick-job?style=for-the-badge&color=FFD700&logo=github)](https://github.com/Gone001/Get-quick-job/stargazers)
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-95.7%25-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://github.com/Gone001/Get-quick-job)
@@ -23,7 +23,7 @@
 
 > **Workers find gigs. Recruiters find talent. Everyone wins.**
 >
-> A full-stack gig marketplace with **real-time job matching**, **smart filtering**, and a **slick dark UI** — built and delivered as a client project.
+> 🌐 **[quick - Fast Job Marketplace](https://getquickjob.netlify.app/)** — A full-stack gig marketplace with **real-time job matching**, **smart filtering**, and a **slick dark UI.**
 
 </div>
 
@@ -75,7 +75,7 @@
 ✅  Profile Completion Onboarding Flow
 ✅  Zod + React Hook Form Validation
 ✅  Supabase Realtime Database
-✅  Netlify Deployment Ready (netlify.toml included)
+✅  Netlify Deployment Ready
 ```
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
@@ -117,22 +117,17 @@
 ```bash
 📦 Get-quick-job/
 ┣ 📂 app/                     # Next.js App Router
-┃ ┣ 📂 auth/login/            # 🔐 Login & Signup
+┃ ┣ 📂 auth/                  # 🔐 Authentication pages
 ┃ ┣ 📂 dashboard/
 ┃ ┃ ┣ 📂 worker/              # 👷 Job feed for workers
 ┃ ┃ ┣ 📂 recruiter/           # 🏢 Recruiter panel
 ┃ ┃ ┗ 📂 profile/             # 👤 User profile
-┃ ┗ 📂 jobs/post/             # 📝 Post a job
+┃ ┗ 📂 jobs/                  # 📝 Job pages
 ┣ 📂 components/              # Reusable UI components
 ┣ 📂 hooks/                   # Custom React hooks
 ┣ 📂 lib/                     # Utility functions & configs
-┣ 📂 utils/supabase/          # Supabase client helpers
 ┣ 📂 public/                  # Static assets
-┣ 📂 styles/                  # Global styles
-┣ 📂 scripts/                 # DB setup scripts
-┣ 📄 netlify.toml             # Netlify deploy config
-┣ 📄 next.config.mjs          # Next.js config
-┗ 📄 .env.example             # Environment variables template
+┗ 📄 netlify.toml             # Netlify deploy config
 ```
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
@@ -153,9 +148,8 @@ cd Get-quick-job
 # 2. Install dependencies
 npm install
 
-# 3. Setup environment variables
-cp .env.example .env.local
-# Edit .env.local and fill in your Supabase credentials
+# 3. Add your environment variables
+# Create a .env.local file and add your Supabase project credentials
 
 # 4. Start development server
 npm run dev
@@ -163,14 +157,7 @@ npm run dev
 
 🎉 Open [http://localhost:3000](http://localhost:3000) in your browser!
 
-### 🔑 Environment Variables
-
-```env
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
-NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=your_publishable_key
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
-```
-> 💡 Find these in Supabase Dashboard → **Settings → API**
+> 💡 Supabase credentials can be found in your Supabase Dashboard → **Settings → API**
 
 ## 🌐 Pages & Routes
 
@@ -196,13 +183,15 @@ npm run lint     # 🔍 Run ESLint
 
 ## 🌍 Deployment
 
+🌐 **Live at → [quick - Fast Job Marketplace](https://getquickjob.netlify.app/)**
+
 Deployed on **Netlify** — `netlify.toml` config already included in repo.
 
 **Deploy your own fork in 3 steps:**
 ```
 1. Fork this repo on GitHub
 2. Import it at app.netlify.com
-3. Add your env variables → Site Settings → Environment Variables → Deploy 🚀
+3. Add your Supabase credentials in Site Settings → Environment Variables → Deploy 🚀
 ```
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
@@ -224,7 +213,7 @@ Deployed on **Netlify** — `netlify.toml` config already included in repo.
 | 🚀 **Delivery** | Successfully deployed & handed over via Netlify |
 | 📁 **Purpose** | Shared as a portfolio reference to showcase full-stack capabilities |
 
-> All code, design decisions, DB schema, and deployment were handled **end-to-end by me.**
+> All code, design decisions, and deployment were handled **end-to-end by me.**
 > This repo exists to demonstrate my work — **ownership ≠ contribution here.**
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
@@ -238,7 +227,7 @@ Deployed on **Netlify** — `netlify.toml` config already included in repo.
 <br/><br/>
 
 [![GitHub](https://img.shields.io/badge/GitHub-Gone001-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Gone001)
-[![Live App](https://img.shields.io/badge/🌐%20Live%20App-Getquickjob.netlify.app-00D9FF?style=for-the-badge)](https://Getquickjob.netlify.app)
+[![Live App](https://img.shields.io/badge/🌐%20Live%20App-getquickjob.netlify.app-00D9FF?style=for-the-badge)](https://getquickjob.netlify.app/)
 
 </div>
 
